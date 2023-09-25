@@ -9,21 +9,12 @@
   margin: 0px;
   padding: 0px;
 }
-$appbarHeight: 100px;
-$BackgroungColor: rgba(17, 19, 33);
-.parent {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-height: 100vh;
-  background-color: $BackgroungColor;
-}
-.appbar-parent {
-  display: flex;
-  width: 100%;
-  height: $appbarHeight;
+$appbarHeight: 90px;
+$BackgroundColor: rgba(17, 19, 33);
+$ComponentBackground: rgb(12, 13, 20);
+@mixin appearence {
   border-radius: 10px;
-  margin: 10px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.09);
+  border: 2px solid rgb(4, 4, 5);
+  background-color: $ComponentBackground;
+  backdrop-filter: blur(4px);
 }

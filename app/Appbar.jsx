@@ -1,10 +1,9 @@
-import React from "react";
-
 export default function Appbar() {
   return (
     <div className="appbar-parent">
-      <div>a</div>
-      <div>a</div>
+      <div className="logo">
+        <h1>APP LOGO</h1>
+      </div>
     </div>
   );
 }
