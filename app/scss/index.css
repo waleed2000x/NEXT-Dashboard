@@ -1,0 +1,29 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Kanit:ital,wght@0,400;1,300&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Iso&display=swap");
+  font-family: "Amatic SC", cursive;
+  font-family: "Caveat", cursive;
+  font-family: "Instrument Serif", serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(17, 19, 33);
+}
+
+.appbar-parent {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.09);
+}/*# sourceMappingURL=index.css.map */
