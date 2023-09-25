@@ -18,3 +18,32 @@ $ComponentBackground: rgb(12, 13, 20);
   background-color: $ComponentBackground;
   backdrop-filter: blur(4px);
 }
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $BackgroundColor;
+  .appbar-parent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+    .appbar-center {
+      @include appearence();
+      display: flex;
+      width: 95%;
+      height: $appbarHeight;
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        & h1 {
+          color: white;
+        }
+      }
+    }
+  }
+}
