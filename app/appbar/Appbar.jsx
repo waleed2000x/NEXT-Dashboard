@@ -12,12 +12,8 @@ export default function Appbar() {
         </div>
         <div className="nav-items">
           <div className="nav-search">
-            <Input variant="outline" placeholder="Search:" type="text" />
-            <Button
-              colorScheme="gray"
-              variant="outline"
-              leftIcon={<SearchIcon />}
-            >
+            <Input variant="outline" type="text" />
+            <Button variant="ghost" leftIcon={<SearchIcon />}>
               Search
             </Button>
           </div>

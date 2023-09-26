@@ -78,6 +78,9 @@ $ComponentBackground: rgb(12, 13, 20);
           height: 50px;
           margin-right: 20px;
           color: white;
+          & svg {
+            font-size: 30px;
+          }
           &:hover {
             color: black;
           }

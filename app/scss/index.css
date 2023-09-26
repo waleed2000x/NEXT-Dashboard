@@ -62,6 +62,9 @@
   margin-right: 20px;
   color: white;
 }
+.parent .appbar-parent .appbar-center .nav-search button svg {
+  font-size: 30px;
+}
 .parent .appbar-parent .appbar-center .nav-search button:hover {
   color: black;
 }
