@@ -39,21 +39,26 @@
 }
 .parent .appbar-parent .appbar-center .nav-items {
   display: flex;
+  width: 75%;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
 }
 .parent .appbar-parent .appbar-center .nav-search {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 50%;
+  height: 100%;
 }
 .parent .appbar-parent .appbar-center .nav-search input {
   margin: 0px 10px 0px 10px;
   color: white;
   font-size: 20px;
   font-family: inherit;
+  height: 50px;
 }
 .parent .appbar-parent .appbar-center .nav-search button {
+  height: 50px;
   margin-right: 20px;
   color: white;
 }
@@ -64,9 +69,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 25%;
+}
+.parent .appbar-parent .logo svg {
+  font-size: 70px;
+  margin: 0px 5px 8px 10px;
+  color: white;
+}
+.parent .appbar-parent .logo svg :hover {
+  color: black;
 }
 .parent .appbar-parent .logo h1 {
   font-size: 50px;
   color: white;
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
