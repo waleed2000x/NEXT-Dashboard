@@ -72,10 +72,8 @@ $ComponentBackground: rgb(12, 13, 20);
           color: white;
           font-size: 20px;
           font-family: inherit;
-          height: 50px;
         }
         & button {
-          height: 50px;
           margin-right: 20px;
           color: white;
           & svg {
@@ -107,4 +105,10 @@ $ComponentBackground: rgb(12, 13, 20);
       }
     }
   }
+}
+.parent-login {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  @include BackgroundGradient();
 }
