@@ -37,6 +37,29 @@
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
 }
+.parent .appbar-parent .appbar-center .nav-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.parent .appbar-parent .appbar-center .nav-search {
+  display: flex;
+  width: 50%;
+}
+.parent .appbar-parent .appbar-center .nav-search input {
+  margin: 0px 10px 0px 10px;
+  color: white;
+  font-size: 20px;
+  font-family: inherit;
+}
+.parent .appbar-parent .appbar-center .nav-search button {
+  margin-right: 20px;
+  color: white;
+}
+.parent .appbar-parent .appbar-center .nav-search button:hover {
+  color: black;
+}
 .parent .appbar-parent .logo {
   display: flex;
   justify-content: center;
@@ -44,5 +67,6 @@
   width: 20%;
 }
 .parent .appbar-parent .logo h1 {
+  font-size: 50px;
   color: white;
 }/*# sourceMappingURL=index.css.map */
