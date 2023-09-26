@@ -12,11 +12,31 @@
 $appbarHeight: 90px;
 $BackgroundColor: rgba(17, 19, 33);
 $ComponentBackground: rgb(12, 13, 20);
+@mixin BackgroundGradient {
+  background: rgb(44, 62, 80);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 152, 219, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 152, 219, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 152, 219, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);
+}
 @mixin appearence {
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  border: 2px solid rgb(4, 4, 5);
-  background-color: $ComponentBackground;
-  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
 }
 .parent {
   display: flex;
@@ -24,25 +44,25 @@ $ComponentBackground: rgb(12, 13, 20);
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: $BackgroundColor;
+  @include BackgroundGradient();
   .appbar-parent {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 5px;
     .appbar-center {
-      @include appearence();
       display: flex;
       width: 95%;
       height: $appbarHeight;
-      .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        & h1 {
-          color: white;
-        }
+      @include appearence();
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      & h1 {
+        color: white;
       }
     }
   }
