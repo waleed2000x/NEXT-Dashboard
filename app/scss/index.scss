@@ -126,8 +126,19 @@ $ComponentBackground: rgb(12, 13, 20);
     @include appearence();
     .signup-form {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       width: 100%;
+      .signup-inputs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .input-row {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
     }
   }
 }

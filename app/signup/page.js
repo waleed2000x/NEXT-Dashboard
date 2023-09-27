@@ -1,5 +1,5 @@
-import { Input } from "@chakra-ui/react";
-import React from "react";
+import { FormLabel, Input } from "@chakra-ui/react";
+import "../scss/index.css";
 
 export default function page() {
   return (
@@ -7,18 +7,16 @@ export default function page() {
       <div className="signup-card">
         <div className="signup-form">
           <h1>Signup</h1>
-          <div className="input-signup">
+          <div className="signup-inputs">
             <div className="input-row">
-              <Input variant="filled" />
-              <Input variant="filled" />
-            </div>
-            <div className="input-row">
-              <Input variant="filled" />
-              <Input variant="filled" />
-            </div>
-            <div className="input-row">
-              <Input variant="filled" />
-              <Input variant="filled" />
+              <div className="input">
+                <FormLabel>First Name</FormLabel>
+                <Input variant="filled" />
+              </div>
+              <div className="input">
+                <FormLabel>Last Name</FormLabel>
+                <Input variant="filled" />
+              </div>
             </div>
           </div>
         </div>

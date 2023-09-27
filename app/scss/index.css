@@ -115,7 +115,18 @@
 }
 .parent-signup .signup-card .signup-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
+}
+.parent-signup .signup-card .signup-form .signup-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .input-row {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
