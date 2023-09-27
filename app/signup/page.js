@@ -1,5 +1,8 @@
-import { FormLabel, Input } from "@chakra-ui/react";
+import { Button, Divider, FormLabel, Input } from "@chakra-ui/react";
 import "../scss/index.css";
+import Link from "next/link";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import GoogleIcon from "@mui/icons-material/Google";
 
 export default function page() {
   return (
@@ -27,7 +30,7 @@ export default function page() {
                   variant="outline"
                   borderColor="white"
                   focusBorderColor="white"
-                  type="password"
+                  type="text"
                 />
               </div>
             </div>
@@ -51,6 +54,47 @@ export default function page() {
                   type="text"
                 />
               </div>
+            </div>
+            <div className="input-row">
+              <div className="input">
+                <FormLabel>Password</FormLabel>
+                <Input
+                  variant="outline"
+                  borderColor="white"
+                  focusBorderColor="white"
+                  type="password"
+                  backgroundColor="transparent"
+                />
+              </div>
+              <div className="input">
+                <FormLabel>Confirm Pasword</FormLabel>
+                <Input
+                  variant="outline"
+                  borderColor="white"
+                  focusBorderColor="white"
+                  type="password"
+                />
+              </div>
+            </div>
+            <div className="button-signup">
+              <Button
+                variant="outline"
+                color="facebook"
+                size="lg"
+                marginTop="20px"
+              >
+                Signup
+              </Button>
+              <p>
+                Already registered<Link href="/login">Login</Link>
+              </p>
+            </div>
+            <Divider width="80%" padding="20px" />
+            <div className="alternate-login">
+              <Button leftIcon={<GitHubIcon />}>Login With Github</Button>
+              <Button colorScheme="blue" leftIcon={<GoogleIcon />}>
+                Login With Google
+              </Button>
             </div>
           </div>
         </div>

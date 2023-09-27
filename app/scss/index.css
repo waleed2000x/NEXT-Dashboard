@@ -147,6 +147,25 @@
 .parent-signup .signup-card .signup-form .signup-inputs .input-row .input input {
   font-weight: bolder;
 }
+.parent-signup .signup-card .signup-form .signup-inputs .button-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .button-signup p {
+  padding-top: 10px;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .button-signup p a {
+  padding-left: 5px;
+  font-weight: bold;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .alternate-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 70%;
+}
 
 .parent-login {
   display: flex;
@@ -193,8 +212,10 @@
 .parent-login .login-card .login-form .inputs label {
   margin-top: 20px;
   width: 68%;
+  font-weight: bolder;
 }
 .parent-login .login-card .login-form .inputs input {
+  font-weight: bolder;
   width: 70%;
 }
 .parent-login .login-card .login-form p {
@@ -203,15 +224,20 @@
 }
 .parent-login .login-card .login-form .login-button {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
+.parent-login .login-card .login-form .login-button p a {
+  padding-left: 5px;
+  font-weight: bold;
+}
 .parent-login .login-card .login-form .login-button button {
-  margin: 20px 0px;
+  margin-top: 30px;
 }
 .parent-login .login-card .login-form .alternate-login {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
 }/*# sourceMappingURL=index.css.map */

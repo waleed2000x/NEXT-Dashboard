@@ -156,6 +156,25 @@ $ComponentBackground: rgb(12, 13, 20);
             }
           }
         }
+        .button-signup {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          & p {
+            padding-top: 10px;
+            & a {
+              padding-left: 5px;
+              font-weight: bold;
+            }
+          }
+        }
+        .alternate-login {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          width: 70%;
+        }
       }
     }
   }
@@ -194,8 +213,10 @@ $ComponentBackground: rgb(12, 13, 20);
         & label {
           margin-top: 20px;
           width: 68%;
+          font-weight: bolder;
         }
         & input {
+          font-weight: bolder;
           width: 70%;
         }
       }
@@ -205,16 +226,23 @@ $ComponentBackground: rgb(12, 13, 20);
       }
       .login-button {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+        & p {
+          & a {
+            padding-left: 5px;
+            font-weight: bold;
+          }
+        }
         & button {
-          margin: 20px 0px;
+          margin-top: 30px;
         }
       }
       .alternate-login {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 30px;
         width: 100%;
       }
     }

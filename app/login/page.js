@@ -8,6 +8,7 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
 import "../scss/index.css";
+import Link from "next/link";
 export default function page() {
   return (
     <div className="parent-login">
@@ -18,7 +19,7 @@ export default function page() {
           </h1>
           <FormControl>
             <div className="inputs">
-              <FormLabel>User Name</FormLabel>
+              <FormLabel>Username/Email</FormLabel>
               <Input
                 variant="outline"
                 borderColor="white"
@@ -37,11 +38,13 @@ export default function page() {
                 type="password"
               />
             </div>
-            <p>Can&apos;t remember Credentials</p>
             <div className="login-button">
-              <Button variant="outline" size="md" color="facebook">
+              <Button variant="outline" size="lg" color="facebook">
                 Login
               </Button>
+              <p>
+                Not yet signed in?<Link href="/signup">Signup</Link>
+              </p>
             </div>
             <Divider color="white" margin="10px 0px" />
             <div className="alternate-login">
