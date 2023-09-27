@@ -86,7 +86,7 @@ export default function page() {
                 Signup
               </Button>
               <p>
-                Already registered<Link href="/login">Login</Link>
+                Already registered!<Link href="/login">Login</Link>
               </p>
             </div>
             <Divider width="80%" padding="20px" />

@@ -228,6 +228,9 @@
   align-items: center;
   width: 100%;
 }
+.parent-login .login-card .login-form .login-button p {
+  padding-top: 10px;
+}
 .parent-login .login-card .login-form .login-button p a {
   padding-left: 5px;
   font-weight: bold;
