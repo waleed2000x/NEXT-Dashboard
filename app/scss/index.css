@@ -30,10 +30,10 @@
   display: flex;
   width: 95%;
   height: 90px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
 }
@@ -66,6 +66,10 @@
 .parent .appbar-parent .appbar-center .nav-search button:hover {
   color: black;
 }
+.parent .appbar-parent .appbar-center .nav-search .menu-icon-appbar {
+  display: flex;
+  width: 150px;
+}
 .parent .appbar-parent .logo {
   display: flex;
   justify-content: center;
@@ -86,11 +90,99 @@
   font-weight: 600;
 }
 
-.parent-login {
+.parent-signup {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   background: rgb(44, 62, 80);
   background: linear-gradient(90deg, rgb(44, 62, 80) 0%, rgb(52, 152, 219) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);
+}
+.parent-signup .signup-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  min-height: 65vh;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.parent-signup .signup-card .signup-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.parent-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(44, 62, 80);
+  background: linear-gradient(90deg, rgb(44, 62, 80) 0%, rgb(52, 152, 219) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);
+}
+.parent-login .login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  min-height: 65vh;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.parent-login .login-card .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+.parent-login .login-card .login-form h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+.parent-login .login-card .login-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.parent-login .login-card .login-form .inputs label {
+  margin-top: 20px;
+  width: 68%;
+}
+.parent-login .login-card .login-form .inputs input {
+  width: 70%;
+}
+.parent-login .login-card .login-form p {
+  text-align: center;
+  width: 100%;
+}
+.parent-login .login-card .login-form .login-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.parent-login .login-card .login-form .login-button button {
+  margin: 20px 0px;
+}
+.parent-login .login-card .login-form .alternate-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
