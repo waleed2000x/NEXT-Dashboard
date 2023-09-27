@@ -119,15 +119,33 @@
   justify-content: center;
   width: 100%;
 }
+.parent-signup .signup-card .signup-form h1 {
+  margin: 15px 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+}
 .parent-signup .signup-card .signup-form .signup-inputs {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 100%;
 }
 .parent-signup .signup-card .signup-form .signup-inputs .input-row {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
+  margin-top: 10px;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .input-row .input {
+  width: 48%;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .input-row .input label {
+  font-weight: bolder;
+}
+.parent-signup .signup-card .signup-form .signup-inputs .input-row .input input {
+  font-weight: bolder;
 }
 
 .parent-login {
