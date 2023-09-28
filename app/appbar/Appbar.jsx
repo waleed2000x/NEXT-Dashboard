@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 export default function Appbar() {
   const route = usePathname();
+  console.log(route);
   return (
     <div className="appbar-parent">
       <div className="appbar-center">
@@ -17,8 +18,8 @@ export default function Appbar() {
           </Link>
         </div>
         <div className="nav-items">
-          <div className="nav-search">
-            {route === "/login" && route === "/signup" ? null : (
+          {route === "/login" && route === "/signup" ? null : (
+            <div className="nav-search">
               <Menu>
                 <MenuButton
                   _hover={{ bg: "#6bb3e3" }}
@@ -79,8 +80,8 @@ export default function Appbar() {
                   </MenuItem>
                 </MenuList>
               </Menu>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import GoogleIcon from "@mui/icons-material/Google";
 import { signIn } from "next-auth/react"; // Import signIn from next-auth/react
 import Link from "next/link";
 import Image from "next/image";
+import Appbar from "../appbar/Appbar";
 
 export default function LoginPage() {
   const handleGitHubSignIn = () => {
