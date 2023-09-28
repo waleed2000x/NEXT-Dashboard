@@ -4,15 +4,16 @@ import {
   Divider,
   FormControl,
   FormLabel,
+  IconButton,
   Input,
 } from "@chakra-ui/react";
 import "../scss/index.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
-import { signIn } from "next-auth/react"; // Import signIn from next-auth/react
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
-import Appbar from "../appbar/Appbar";
+import HomeIcon from "@mui/icons-material/Home";
 
 export default function LoginPage() {
   const handleGitHubSignIn = () => {
@@ -21,6 +22,13 @@ export default function LoginPage() {
 
   return (
     <div className="parent-login">
+      <div className="nav-home">
+        <Link href="/">
+          <IconButton variant="solid" size="lg" colorScheme="blue">
+            <HomeIcon />
+          </IconButton>
+        </Link>
+      </div>
       <div className="login-card">
         <div className="login-form">
           <h1>
