@@ -3,6 +3,7 @@ import "../scss/index.css";
 import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -98,6 +99,17 @@ export default function page() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="powered">
+        <p>
+          <b>Powered by:</b>
+        </p>
+        <Image
+          src="/images/NextAuth.png"
+          alt="NextAuth"
+          width={200}
+          height={200}
+        />
       </div>
     </div>
   );

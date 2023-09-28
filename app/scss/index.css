@@ -91,6 +91,7 @@
 }
 
 .parent-signup {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +166,20 @@
   justify-content: space-between;
   margin-top: 30px;
   width: 70%;
+}
+.parent-signup .powered {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+.parent-signup .powered img {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.parent-signup .powered p {
+  font-size: larger;
 }
 
 .parent-login {

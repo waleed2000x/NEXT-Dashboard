@@ -1,7 +1,6 @@
 import "./scss/index.css";
 import Appbar from "./appbar/Appbar";
-
-export default function Home() {
+export default async function Home() {
   return (
     <main className="parent">
       <Appbar />
