@@ -1,13 +1,27 @@
-import { Button, Divider, FormLabel, Input } from "@chakra-ui/react";
+import {
+  Button,
+  Divider,
+  FormLabel,
+  IconButton,
+  Input,
+} from "@chakra-ui/react";
 import "../scss/index.css";
 import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import HomeIcon from "@mui/icons-material/Home";
 import Image from "next/image";
 
 export default function page() {
   return (
     <div className="parent-signup">
+      <div className="nav-home">
+        <Link href="/">
+          <IconButton variant="solid" size="lg" colorScheme="blue">
+            <HomeIcon />
+          </IconButton>
+        </Link>
+      </div>
       <div className="signup-card">
         <div className="signup-form">
           <h1>

@@ -38,6 +38,19 @@ $ComponentBackground: rgb(12, 13, 20);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
 }
+@mixin navHome {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  & button {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    & svg {
+      font-size: 50px;
+    }
+  }
+}
 .parent {
   display: flex;
   flex-direction: column;
@@ -118,6 +131,9 @@ $ComponentBackground: rgb(12, 13, 20);
   width: 100%;
   min-height: 100vh;
   @include BackgroundGradient();
+  .nav-home {
+    @include navHome();
+  }
   .signup-card {
     display: flex;
     flex-direction: column;
@@ -202,17 +218,7 @@ $ComponentBackground: rgb(12, 13, 20);
   min-height: 100vh;
   @include BackgroundGradient();
   .nav-home {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    & button {
-      height: 70px;
-      width: 70px;
-      border-radius: 20px;
-      & svg {
-        font-size: 50px;
-      }
-    }
+    @include navHome();
   }
   .login-card {
     display: flex;

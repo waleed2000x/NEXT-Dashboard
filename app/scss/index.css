@@ -101,6 +101,19 @@
   background: linear-gradient(90deg, rgb(44, 62, 80) 0%, rgb(52, 152, 219) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);
 }
+.parent-signup .nav-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.parent-signup .nav-home button {
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+}
+.parent-signup .nav-home button svg {
+  font-size: 50px;
+}
 .parent-signup .signup-card {
   display: flex;
   flex-direction: column;
@@ -198,8 +211,8 @@
   right: 20px;
 }
 .parent-login .nav-home button {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 20px;
 }
 .parent-login .nav-home button svg {
