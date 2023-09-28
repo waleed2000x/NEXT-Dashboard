@@ -263,4 +263,18 @@ $ComponentBackground: rgb(12, 13, 20);
       }
     }
   }
+  .powered {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    & img {
+      border-radius: 10px;
+      margin-left: 10px;
+    }
+    & p {
+      font-size: larger;
+    }
+  }
 }
