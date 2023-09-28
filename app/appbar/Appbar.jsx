@@ -23,15 +23,6 @@ export default function Appbar() {
         </div>
         <div className="nav-items">
           <div className="nav-search">
-            <Input variant="outline" size="lg" type="text" />
-            <Button
-              variant="ghost"
-              size="lg"
-              _hover={{ bg: "#6bb3e3" }}
-              leftIcon={<SearchIcon />}
-            >
-              Search
-            </Button>
             <Menu>
               <MenuButton
                 _hover={{ bg: "#6bb3e3" }}
@@ -43,22 +34,28 @@ export default function Appbar() {
               >
                 <PersonIcon />
               </MenuButton>
-              <MenuList style={{ backgroundColor: "#3498DB" }}>
+              <MenuList
+                style={{
+                  backgroundColor: "#3498DB",
+                  padding: "10px",
+                  width: "300px",
+                }}
+              >
                 <MenuItem _hover={{ bg: "#6bb3e3" }} backgroundColor="#3498DB">
-                  Account
+                  <b>Account</b>
                 </MenuItem>
                 <MenuItem _hover={{ bg: "#6bb3e3" }} backgroundColor="#248bd1">
-                  Profile
+                  <b>Profile</b>
                 </MenuItem>
                 <MenuItem _hover={{ bg: "#6bb3e3" }} backgroundColor="#3498DB">
-                  Settings
+                  <b>Settings</b>
                 </MenuItem>
                 <Link href="/login">
                   <MenuItem
                     _hover={{ bg: "#6bb3e3" }}
                     backgroundColor="#248bd1"
                   >
-                    Login
+                    <b>Login</b>
                   </MenuItem>
                 </Link>
                 <Link href="/signup">
@@ -66,11 +63,11 @@ export default function Appbar() {
                     _hover={{ bg: "#6bb3e3" }}
                     backgroundColor="#3498DB"
                   >
-                    Signup
+                    <b>Signup</b>
                   </MenuItem>
                 </Link>
                 <MenuItem _hover={{ bg: "#6bb3e3" }} backgroundColor="#248bd1">
-                  Logout
+                  <b>Logout</b>
                 </MenuItem>
               </MenuList>
             </Menu>
