@@ -253,7 +253,7 @@
 .parent-login .login-card .login-form .login-button button {
   margin-top: 30px;
 }
-.parent-login .login-card .login-form .alternate-login {
+.parent-login .login-card .alternate-login {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;

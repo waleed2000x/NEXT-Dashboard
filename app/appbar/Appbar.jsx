@@ -17,7 +17,7 @@ export default function Appbar() {
       <div className="appbar-center">
         <div className="logo">
           <MonitorHeartOutlinedIcon />
-          <Link href="/login">
+          <Link href="/">
             <h1>DataPulse</h1>
           </Link>
         </div>
