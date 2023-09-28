@@ -92,8 +92,10 @@ export default function page() {
             </div>
             <Divider width="80%" padding="20px" />
             <div className="alternate-login">
-              <Button leftIcon={<GitHubIcon />}>Login With Github</Button>
-              <Button colorScheme="blue" leftIcon={<GoogleIcon />}>
+              <Button margin="5px" leftIcon={<GitHubIcon />}>
+                Login With Github
+              </Button>
+              <Button margin="5px" colorScheme="blue" leftIcon={<GoogleIcon />}>
                 Login With Google
               </Button>
             </div>

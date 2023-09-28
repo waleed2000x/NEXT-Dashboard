@@ -56,10 +56,14 @@ export default function LoginPage() {
             </div>
             <Divider color="white" margin="10px 0px" />
             <div className="alternate-login">
-              <Button leftIcon={<GitHubIcon />} onClick={handleGitHubSignIn}>
+              <Button
+                margin="5px"
+                leftIcon={<GitHubIcon />}
+                onClick={handleGitHubSignIn}
+              >
                 Login With Github
               </Button>
-              <Button colorScheme="blue" leftIcon={<GoogleIcon />}>
+              <Button margin="5px" colorScheme="blue" leftIcon={<GoogleIcon />}>
                 Login With Google
               </Button>
             </div>
