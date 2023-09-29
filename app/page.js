@@ -3,7 +3,10 @@ import Appbar from "./appbar/Appbar";
 export default async function Home() {
   return (
     <main className="parent">
-      <Appbar />
+      {/* 
+//hello
+//there
+ */}
     </main>
   );
 }

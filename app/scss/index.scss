@@ -129,7 +129,7 @@ $ComponentBackground: rgb(12, 13, 20);
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   @include BackgroundGradient();
   .nav-home {
     @include navHome();
@@ -215,7 +215,7 @@ $ComponentBackground: rgb(12, 13, 20);
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   @include BackgroundGradient();
   .nav-home {
     @include navHome();

@@ -1,0 +1,93 @@
+.appbar-parent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 5px;
+  background: rgb(44, 62, 80);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 152, 219, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 152, 219, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(52, 152, 219, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);
+}
+
+.appbar-center {
+  display: flex;
+  width: 95%;
+  height: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.nav-items {
+  display: flex;
+  width: 75%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.nav-search input {
+  margin: 0px 10px 0px 10px;
+  color: white;
+  font-size: 20px;
+  font-family: inherit;
+}
+
+.nav-search button {
+  margin-right: 20px;
+  color: white;
+}
+
+.nav-search button svg {
+  font-size: 30px;
+}
+
+.nav-search button:hover {
+  color: black;
+}
+
+.menu-icon-appbar {
+  display: flex;
+  width: 100px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.logo svg {
+  font-size: 70px;
+  margin: 0px 5px 8px 10px;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 600;
+}

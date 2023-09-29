@@ -96,7 +96,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background: rgb(44, 62, 80);
   background: linear-gradient(90deg, rgb(44, 62, 80) 0%, rgb(52, 152, 219) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);
@@ -200,7 +200,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background: rgb(44, 62, 80);
   background: linear-gradient(90deg, rgb(44, 62, 80) 0%, rgb(52, 152, 219) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3e50",endColorstr="#3498db",GradientType=1);

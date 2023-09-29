@@ -18,7 +18,7 @@ export default function Appbar() {
           </Link>
         </div>
         <div className="nav-items">
-          {route === "/login" && route === "/signup" ? null : (
+          {route === "/login" || route === "/signup" ? null : (
             <div className="nav-search">
               <Menu>
                 <MenuButton

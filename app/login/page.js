@@ -22,13 +22,13 @@ export default function LoginPage() {
 
   return (
     <div className="parent-login">
-      <div className="nav-home">
+      {/* <div className="nav-home">
         <Link href="/">
           <IconButton variant="solid" size="lg" colorScheme="blue">
             <HomeIcon />
           </IconButton>
         </Link>
-      </div>
+      </div> */}
       <div className="login-card">
         <div className="login-form">
           <h1>

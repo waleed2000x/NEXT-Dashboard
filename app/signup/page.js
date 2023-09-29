@@ -15,13 +15,13 @@ import Image from "next/image";
 export default function page() {
   return (
     <div className="parent-signup">
-      <div className="nav-home">
+      {/* <div className="nav-home">
         <Link href="/">
           <IconButton variant="solid" size="lg" colorScheme="blue">
             <HomeIcon />
           </IconButton>
         </Link>
-      </div>
+      </div> */}
       <div className="signup-card">
         <div className="signup-form">
           <h1>
