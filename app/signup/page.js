@@ -1,3 +1,4 @@
+"use client";
 import {
   Button,
   Divider,
@@ -9,19 +10,13 @@ import "../scss/index.css";
 import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
-import HomeIcon from "@mui/icons-material/Home";
+// import HomeIcon from "@mui/icons-material/Home";
 import Image from "next/image";
+import { signIn } from "next-auth/react";
 
 export default function page() {
   return (
     <div className="parent-signup">
-      {/* <div className="nav-home">
-        <Link href="/">
-          <IconButton variant="solid" size="lg" colorScheme="blue">
-            <HomeIcon />
-          </IconButton>
-        </Link>
-      </div> */}
       <div className="signup-card">
         <div className="signup-form">
           <h1>
@@ -106,7 +101,11 @@ export default function page() {
             </div>
             <Divider width="80%" padding="20px" />
             <div className="alternate-login">
-              <Button margin="5px" leftIcon={<GitHubIcon />}>
+              <Button
+                margin="5px"
+                onClick={() => signIn("github")}
+                leftIcon={<GitHubIcon />}
+              >
                 Login With Github
               </Button>
               <Button margin="5px" colorScheme="blue" leftIcon={<GoogleIcon />}>
