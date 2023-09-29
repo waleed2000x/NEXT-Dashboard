@@ -76,15 +76,17 @@
   align-items: center;
   width: 25%;
 }
-.parent .appbar-parent .logo svg {
+.parent .appbar-parent .logo a {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.parent .appbar-parent .logo a svg {
   font-size: 70px;
   margin: 0px 5px 8px 10px;
   color: white;
 }
-.parent .appbar-parent .logo svg :hover {
-  color: black;
-}
-.parent .appbar-parent .logo h1 {
+.parent .appbar-parent .logo a h1 {
   font-size: 50px;
   color: white;
   font-weight: 600;

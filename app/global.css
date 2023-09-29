@@ -80,6 +80,9 @@
   width: 25%;
 }
 
+.logo a {
+  display: flex;
+}
 .logo svg {
   font-size: 70px;
   margin: 0px 5px 8px 10px;

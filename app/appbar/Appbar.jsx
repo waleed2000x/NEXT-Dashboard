@@ -12,8 +12,8 @@ export default function Appbar() {
     <div className="appbar-parent">
       <div className="appbar-center">
         <div className="logo">
-          <MonitorHeartOutlinedIcon />
           <Link href="/">
+            <MonitorHeartOutlinedIcon />
             <h1>DataPulse</h1>
           </Link>
         </div>
@@ -38,32 +38,34 @@ export default function Appbar() {
                     width: "300px",
                   }}
                 >
-                  <MenuItem
-                    _hover={{ bg: "#6bb3e3" }}
-                    backgroundColor="#3498DB"
-                  >
-                    <b>Account</b>
-                  </MenuItem>
-                  <MenuItem
-                    _hover={{ bg: "#6bb3e3" }}
-                    backgroundColor="#248bd1"
-                  >
-                    <b>Profile</b>
-                  </MenuItem>
-                  <MenuItem
-                    _hover={{ bg: "#6bb3e3" }}
-                    backgroundColor="#3498DB"
-                  >
-                    <b>Settings</b>
-                  </MenuItem>
-                  <Link href="/login">
-                    <MenuItem
-                      _hover={{ bg: "#6bb3e3" }}
-                      backgroundColor="#248bd1"
-                    >
-                      <b>Login</b>
-                    </MenuItem>
-                  </Link>
+                  {route === "/" ? null : (
+                    <>
+                      <MenuItem
+                        _hover={{ bg: "#6bb3e3" }}
+                        backgroundColor="#3498DB"
+                      >
+                        <b>Account</b>
+                      </MenuItem>
+                      <MenuItem
+                        _hover={{ bg: "#6bb3e3" }}
+                        backgroundColor="#248bd1"
+                      >
+                        <b>Profile</b>
+                      </MenuItem>
+                      <MenuItem
+                        _hover={{ bg: "#6bb3e3" }}
+                        backgroundColor="#3498DB"
+                      >
+                        <b>Settings</b>
+                      </MenuItem>
+                      <MenuItem
+                        _hover={{ bg: "#6bb3e3" }}
+                        backgroundColor="#248bd1"
+                      >
+                        <b>Logout</b>
+                      </MenuItem>
+                    </>
+                  )}
                   <Link href="/signup">
                     <MenuItem
                       _hover={{ bg: "#6bb3e3" }}
@@ -72,12 +74,14 @@ export default function Appbar() {
                       <b>Signup</b>
                     </MenuItem>
                   </Link>
-                  <MenuItem
-                    _hover={{ bg: "#6bb3e3" }}
-                    backgroundColor="#248bd1"
-                  >
-                    <b>Logout</b>
-                  </MenuItem>
+                  <Link href="/login">
+                    <MenuItem
+                      _hover={{ bg: "#6bb3e3" }}
+                      backgroundColor="#248bd1"
+                    >
+                      <b>Login</b>
+                    </MenuItem>
+                  </Link>
                 </MenuList>
               </Menu>
             </div>
